@@ -203,8 +203,8 @@ state.plot <- ggplot(all.sightings, aes(x = YearMonth,y = Sightings)) +
   geom_line(aes(color = "darkblue")) +
   facet_wrap(~State, nrow = 10, ncol = 5) + 
   theme_bw() + 
-  scale_color_manual(values = c("darkblue" = "darkblue"), guide = "none") +
-  scale_x_date(breaks = "5 years", labels = date_format('%Y')) +
+  scale_color_manual(values = c("darkblue" = "darkblue"), guide ="none") +
+  scale_x_date(breaks = "5 years", labels =date_format("%Y")) +
   xlab("Years") +
   ylab("Number of Sightings") +
   ggtitle("Number of UFO sightings by Month-Year and U.S. State (1990-2010)")
